@@ -1,598 +1,1433 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>TLuan &mdash; Backend Developer</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-	<title>Vo Thanh Luan</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+    <meta name="keywords" content="html, css, javascript, jquery" />
+    <meta name="author" content="" />
 
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/vendor/icomoon/style.css" />
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/vendor/animate.min.css" />
+    <link rel="stylesheet" href="css/vendor/aos.css" />
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css" />
 
-	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.css">
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+    <nav class="unslate_co--site-mobile-menu">
+      <div class="close-wrap d-flex">
+        <a href="#" class="d-flex ml-auto js-menu-toggle">
+          <span class="close-label">Close</span>
+          <div class="close-times">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+          </div>
+        </a>
+      </div>
+      <div class="site-mobile-inner"></div>
+    </nav>
 
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/magnific-popup.css">
+    <div class="unslate_co--site-wrap">
+      <div class="unslate_co--site-inner">
+        <div class="lines-wrap">
+          <div class="lines-inner">
+            <div class="lines"></div>
+          </div>
+        </div>
+        <!-- END lines -->
 
-	<link rel="stylesheet" href="css/aos.css">
+        <nav class="unslate_co--site-nav site-nav-target">
+          <div class="container">
+            <div
+              class="row align-items-center justify-content-between text-left"
+            >
+              <div class="col-md-5 text-right">
+                <ul
+                  class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block"
+                >
+                  <li class="has-children">
+                    <a href="#home-section" class="nav-link">Home</a>
+                  </li>
+                  <li>
+                    <a href="#portfolio-section" class="nav-link">Dự án</a>
+                  </li>
+                  <li><a href="#about-section" class="nav-link">Về tôi</a></li>
+                  <li>
+                    <a href="#services-section" class="nav-link">Dịch vụ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="site-logo pos-absolute">
+                <a href="index.html" class="unslate_co--site-logo"
+                  >Thành Luân<span>.</span></a
+                >
+              </div>
+              <div class="col-md-5 text-right text-lg-left">
+                <ul
+                  class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block"
+                >
+                  <li>
+                    <a href="#skills-section" class="nav-link">Kỹ năng</a>
+                  </li>
+                  <li>
+                    <a href="#testimonial-section" class="nav-link">Đánh giá</a>
+                  </li>
+                  <li>
+                    <a href="#journal-section" class="nav-link">Kinh nghiệm</a>
+                  </li>
+                  <li>
+                    <a href="#contact-section" class="nav-link">Liên hệ</a>
+                  </li>
+                </ul>
 
-	<link rel="stylesheet" href="css/ionicons.min.css">
+                <ul
+                  class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none"
+                >
+                  <li><a href="#" class="js-menu-toggle">Menu</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- END nav -->
 
-	<link rel="stylesheet" href="css/flaticon.css">
-	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" type="image/x-icon" href="/images/baro.png">
-</head>
+        <div
+          class="cover-v1 jarallax"
+          style="background-image: url('images/avt-l.jpg')"
+          id="home-section"
+        >
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-7 mx-auto text-center">
+                <h1 class="heading gsap-reveal-hero">Xin chào!</h1>
+                <h2 class="subheading gsap-reveal-hero">
+                  Tôi là Võ Thành Luân <br />Một Backend Web Developer.
+                </h2>
+              </div>
+            </div>
+          </div>
 
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+          <a href="#portfolio-section" class="mouse-wrap smoothscroll">
+            <span class="mouse">
+              <span class="scroll"></span>
+            </span>
+            <span class="mouse-label">Scroll</span>
+          </a>
+        </div>
+        <!-- END .cover-v1 -->
 
+        <div class="unslate_co--section" id="portfolio-section">
+          <div class="container">
+            <div class="relative">
+              <div class="loader-portfolio-wrap">
+                <div class="loader-portfolio"></div>
+              </div>
+            </div>
+            <div id="portfolio-single-holder"></div>
 
-	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html"><span>T</span>Luan</a>
-			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span>
-			</button>
+            <div class="portfolio-wrapper">
+              <div
+                class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter"
+              >
+                <h2 class="mr-auto heading-h2">
+                  <span class="gsap-reveal">Dự án tiêu biểu</span>
+                </h2>
 
-			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav nav ml-auto">
-					<li class="nav-item"><a href="#home-section"
-							class="nav-link font-weight-bold text-uppercase"><span>Trang chủ</span></a>
-					</li>
-					<li class="nav-item"><a href="#about-section"
-							class="nav-link font-weight-bold text-uppercase"><span>Thông tin</span></a></li>
-					<!-- <li class="nav-item"><a href="#resume-section"
-							class="nav-link font-weight-bold text-uppercase"><span>Resume</span></a></li> -->
-					<li class="nav-item"><a href="#services-section"
-							class="nav-link font-weight-bold text-uppercase"><span>Dịch
-								vụ</span></a></li>
-					<li class="nav-item"><a href="#page-2"
-							class="nav-link font-weight-bold text-uppercase"><span>Dự án cá
-								nhân</span></a>
-					</li>
-					<li class="nav-item"><a href="#contact-section"
-							class="nav-link font-weight-bold text-uppercase"><span>Liên
-								hệ</span></a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<section class="hero-wrap js-fullheight">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-					<div class="text text-center">
-						<span class="subheading">Xin chào ! Tôi là</span>
-						<h1>Võ Thành Luân</h1>
-						<h2>Tôi là
-							<span class="txt-rotate" data-period="2000"
-								data-rotate='[ "1 Backend Web Developer." ]'></span>
-						</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-		<div class="mouse">
-			<a href="#" class="mouse-icon">
-				<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
-			</a>
-		</div>
-	</section>
+                <!-- <a href="#" class="text-white js-filter d-inline-block d-lg-none">Filter</a>
+              
+              <div class="filter-wrap">
+                <div class="filter ml-auto" id="filters">
+                  <a href="#" class="active" data-filter="*">All</a>
+                  <a href="#" data-filter=".web">Web</a>
+                  <a href="#" data-filter=".branding">Branding</a>
+                  <a href="#" data-filter=".illustration">Illustration</a>
+                  <a href="#" data-filter=".packaging">Packaging</a>
+                </div>
+              </div> -->
+              </div>
 
-	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex no-gutters goto-here">
-				<div class="col-md-6 col-lg-6 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/luan-w3.jpg);">
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6 pl-md-5 py-5">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">Về bản thân</h1>
-							<h2 class="mb-4">Giới thiệu</h2>
-							<p>Luôn Luôn phát triển, đổi mới bản thân không ngừng nghĩ để thích nghi với môi trường làm việc và công nghệ.
-							</p>
-							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Tên:</span> <span>Võ Thành Luân</span></li>
-								<li class="d-flex"><span>Năm sinh:</span> <span>2003</span></li>
-								<li class="d-flex"><span>Địa chỉ:</span> <span>TP.HCM</span></li>
-								<li class="d-flex"><span>Email:</span> <span>vothanhluan.business@gmail.com</span></li>
-								<li class="d-flex"><span>Github:</span> <a href="https://github.com/tluanBusiness"
-										class="text-decoration-none">tluanBusiness</a>
-								</li>
-								<li class="d-flex"><span>LinkedIn:</span> <a href="https://www.linkedin.com/in/võ-thành-luân-540812278"
-										class="text-decoration-none">Võ Thành Luân</a>
-								</li>
+              <div id="posts" class="row gutter-isotope-item">
+                <div
+                  class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <a
+                    href="https://hisol.vn/"
+                    class="portfolio-item isotope-item gsap-reveal-img"
+                    data-id="1" target="_blank"
+                  >
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>Hisol</h3>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                    <img
+                      src="images/web/web2.png"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <a
+                    href="https://hiboustudio21.com/"
+                    class="portfolio-item item-portrait isotope-item gsap-reveal-img"
+                    data-id="3" target="_blank"
+                  >
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>Hibou Studio</h3>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                    <img
+                      src="images/web/web1.png"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
 
-							</ul>
-						</div>
-					</div>
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-							<p class="mb-4">
-								<span class="number" data-number="6"></span>
-								<span>Dự án hoàn thành</span>
-							</p>
-							<!-- <p><a href="#" class="btn btn-primary py-3 px-3">Tải CV</a></p> -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                <div
+                  class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <a
+                    href="https://winmedia.vn/"
+                    class="portfolio-item isotope-item gsap-reveal-img"
+                    target="_blank"
+                    data-id="4"
+                  >
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>Win Media</h3>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                    <img
+                      src="images/web/web4.png"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
 
-	<section class="ftco-section ftco-no-pb" id="resume-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<nav id="navi">
-						<ul>
-							<li><a href="#page-1">Học vấn</a></li>
-							<li><a href="#page-2">Kinh nghiệm học tập</a></li>
-							<li><a href="#page-3">Kinh nghiệm làm việc</a></li>
-							<li><a href="#page-4">Kĩ năng</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="col-md-9">
-					<div id="page-1" class="page one">
-						<h2 class="heading">Học vấn</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2021-2024</span>
-								<h2>KỸ SƯ CÔNG NGHỆ THÔNG TIN</h2>
-								<span class="position text-uppercase">Cao đẳng Công Nghệ Thủ Đức</span>
-								<p>Tốt nghiệp ngành công nghệ thông tin, chuyên ngành lập trình web Backend, là leader trong nhiều dự án. Có 
-									Khả năng độc lập và giải quyết vấn đề, teamwork ăn ý với các thành viên.
-								</p>
-							</div>
-						</div>
-					</div>
+                <div
+                  class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <a
+                    href="https://pfl.edu.vn/"
+                    class="portfolio-item isotope-item gsap-reveal-img"
+                    target="_blank"
+                  >
+                    <div class="overlay">
+                      <span class="wrap-icon icon-photo2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>PFL Education</h3>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                    <img
+                      src="images/web/web5.png"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
 
-					<div id="page-2" class="page two">
-						<h2 class="heading">Kinh nghiệm học tập</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">6/2023</span>
-								<h2>Application Programming</h2>
-								<span class="position">Tên dự án: QLST_COOPFOOD</span>
-								<p><strong>Mô tả: </strong> Quản lý siêu thị và thu ngân</p>
-								<p><strong>Kỹ thuật:</strong> SQL Server/Ngôn ngữ C#/CrytalsReport</p>
-								<p><strong>Thời gian:</strong> Triển khai và hoàn thành dự án trong 49 ngày</p>
-								<p><strong>Thành viên:</strong> 3 người</p>
-								<p><strong>Vị trí:</strong> Thành viên trong nhóm</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">7/2023</span>
-								<h2>Back-End Web 1</h2>
-								<span class="position">Tên dự án: TopGear-Ecommerce</span>
-								<p><strong>Mô tả: </strong> Website bán đồ công nghệ và dịch vụ</p>
-								<p><strong>Kỹ thuật:</strong> MySQL/Ngôn Ngữ PHP/Lavarel framework</p>
-								<p><strong>Thời gian:</strong> Triển khai và hoàn thành dự án trong 35 ngày</p>
-								<p><strong>Thành viên:</strong> 5 người</p>
-								<p><strong>Vị trí:</strong> Là leader trong nhóm</p>
-							</div>
-						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">12/2023</span>
-								<h2>Web development 2</h2>
-								<span class="position">Tên dự án: Watch Ecommerce</span>
-								<p><strong>Mô tả: </strong> Website thương mại điện tử (về đồng hồ)</p>
-								<p><strong>Kỹ thuật:</strong> MySQL/Ngôn Ngữ PHP/Lavarel framework</p>
-								<p><strong>Thời gian:</strong> Triển khai và hoàn thành dự án trong 42 ngày</p>
-								<p><strong>Thành viên:</strong> 3 người</p>
-								<p><strong>Vị trí:</strong> Là leader trong nhóm</p>
-							</div>
-						</div>
-					</div>
+                <div
+                  class="item illustration packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <a
+                    href="https://casawines.com/"
+                    class="portfolio-item isotope-item gsap-reveal-img"
+                    target="_blank"
+                  >
+                    <div class="overlay">
+                      <span class="wrap-icon icon-photo2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>Casawines</h3>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                    <img
+                      src="images/web/web6.png"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
 
-					<div id="page-3" class="page two">
-						<h2 class="heading">Kinh nghiệm làm việc</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">12/2023 - 6/2024</span>
-								<h2>Web Developer - Backend</h2>
-								<span class="position">Mevivu Tenchnology</span>
-								<p>Lập trình web. Sử dụng ngôn ngữ PHP và dùng Laravel Framework cho phía backend. HTML, CSS(Bootstrap
-									5), JS cho phía frontend. MySQL cho việc lưu trữ dữ liệu người dùng. </p>
-									<p><strong>Mô tả vị trí: </strong> Lập trình viên kỹ thuật phía Backend</p>
-							</div>
-						</div>
-					</div>
-					<div id="page-4" class="page three">
-						<h2 class="heading">Kĩ năng</h2>
+                <div
+                  class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <a
+                    href="https://coconutvtp.vn/"
+                    class="portfolio-item item-portrait isotope-item gsap-reveal-img"
+                    target="_blank"
+                    data-id="2"
+                  >
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>Việt Thiên Phú</h3>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                    <img
+                      src="images/web/web3.png"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
 
-						<div class="row">
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Photoshop</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="50"
-											aria-valuemin="0" aria-valuemax="100" style="width:50%">
-											<span>50%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>jQuery</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="50"
-											aria-valuemin="0" aria-valuemax="100" style="width:50%">
-											<span>50%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>HTML5</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>CSS3</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>WordPress</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>PHP</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>Java</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="50"
-											aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>C#</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                <div
+                  class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <a
+                    href="https://datvietjsc.com/"
+                    class="portfolio-item item-portrait isotope-item gsap-reveal-img"
+                    target="_blank"
+                  >
+                    <div class="overlay">
+                      <span class="wrap-icon icon-photo2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>Đất Việt JSC</h3>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                    <img
+                      src="images/web/web7.png"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
 
-	<section class="ftco-section" id="services-section">
-		<div class="container-fluid px-md-5">
-			<div class="row justify-content-center py-5 mt-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Dịch vụ</h1>
-					<h2 class="mb-4">Dịch vụ</h2>
-					<p>Luôn sẳn lòng hỗ trợ tất cả khách hàng, trong bất kì hoàn cảnh nào</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-analysis"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Thiết kế Landing Page</h3>
-							<p>Sử dụng HTML, CSS, JS, PHP(Wordpress) để thiết kế các landing page</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Lập trình Web</h3>
-							<p>Nhận lập trình các web bán hàng, Admin CMS. Sử dụng Laravel - Backend, MySQL - Database</p>
-						</div>
-					</a>
-				</div>
+                <div
+                  class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <a
+                    href="https://ftcollege.edu.vn/"
+                    class="portfolio-item isotope-item gsap-reveal-img"
+                    target="_blank"
+                  >
+                    <div class="overlay">
+                      <span class="wrap-icon icon-play_circle_filled"></span>
+                      <div class="portfolio-item-content">
+                        <h3>CAO ĐẲNG CÔNG NGHỆ NGOẠI THƯƠNG</h3>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                    <img
+                      src="images/web/web8.png"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
 
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-innovation"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Lập trình APP(Ứng dụng di động)</h3>
-							<p>Sử dụng C#, Java, Laravel - Backend</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-ux-design"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Thiết Banner, Logo</h3>
-							<p>Nhận thiết kế thiệp cưới, thiệp mời, banner, logo thương hiệu.. Photoshop, Figma, Canva
-							</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-idea"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Chỉnh sửa video</h3>
-							<p>Chỉnh sửa các video ngắn. Sử dụng Adobe Premiere / Adobe After Effect</p>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1 shadow">
-						<span class="icon">
-							<i class="flaticon-flasks"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Tư vấn</h3>
-							<p>Hổ trợ tư vấn khách hàng về thiết kế website, bảo trì,...</p>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+                <div
+                  class="item web illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2"
+                >
+                  <a
+                    href="https://tpptech.com.vn/"
+                    class="portfolio-item isotope-item gsap-reveal-img" 
+                    target="_blank"
+                  >
+                    <div class="overlay">
+                      <span class="wrap-icon icon-photo2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>TPP Technology</h3>
+                        <p>Website</p>
+                      </div>
+                    </div>
+                    <img
+                      src="images/web/web9.png"
+                      class="lazyload img-fluid"
+                      alt="Images"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <!-- <div class="unslate_co--section">
+        <div class="container">
+          <div class="owl-carousel logo-slider">
+            <div class="logo-v1 gsap-reveal">
+              <img src="images/logo-google.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="logo-v1 gsap-reveal">
+              <img src="images/logo-puma.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="logo-v1 gsap-reveal">
+              <img src="images/logo-paypal.png" alt="Image" class="img-fluid">
+            </div>
+            <div class="logo-v1 gsap-reveal">
+              <img src="images/logo-adobe.png" alt="Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div> -->
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container-fluid px-md-5">
-			<div class="row d-md-flex align-items-center">
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="6">0</strong>
-							<span>Dự án hoàn thành</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18 shadow">
-						<div class="text">
-							<strong class="number" data-number="6">0</strong>
-							<span>Khách hàng hài lòng</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="unslate_co--section" id="about-section">
+          <div class="container">
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">Về tôi</span>
+              </h2>
+              <span class="gsap-reveal">
+                <img src="images/divider.png" alt="divider" width="76" />
+              </span>
+            </div>
 
-	<section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Hiện tại <span>Nhận</span> các thiết kế landing page, website bán hàng wordpress, App web.
-					<br> Thiết kế logo, banner, ...</h2>
-					<p class="mb-0"><a href="https://zalo.me/0987633254" target="_blank" class="btn btn-primary py-3 px-5">Liên
-							hệ ngay</a></p>
-				</div>
-			</div>
-		</div>
-	</section>
+            <div class="row mt-5 justify-content-between">
+              <div class="col-lg-7 mb-5 mb-lg-0">
+                <figure class="dotted-bg gsap-reveal-img">
+                  <img src="images/avt-l.jpg" alt="Image" class="img-fluid" />
+                </figure>
+              </div>
+              <div class="col-lg-4 pr-lg-5">
+                <h3 class="mb-4 heading-h3">
+                  <span class="gsap-reveal">Full-Stack Developer</span>
+                </h3>
+                <p class="lead gsap-reveal">
+                  Luôn Luôn phát triển, đổi mới bản thân không ngừng nghĩ để
+                  thích nghi với môi trường làm việc và công nghệ.
+                </p>
+                <p class="lead gsap-reveal">
+                  <span>Address:</span><span> <a href=""> TP.HCM</a></span>
+                </p>
+                <br />
+                <p class="lead gsap-reveal">
+                  <span>Phone: </span
+                  ><a href="#">(+84)<span> 0987 633 254</span></a>
+                </p>
+                <p class="lead gsap-reveal">
+                  <span>Email:</span
+                  ><a href="mailto:vothanhluan.business@gmail.com"
+                    ><span>vothanhluan.business@gmail.com</span></a
+                  >
+                </p>
+                <p class="lead gsap-reveal">
+                  <span>Facebook: </span>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100011526190366&mibextid=LQQJ4d"
+                    class="text-decoration-none"
+                  >
+                    Xem qua</a
+                  >
+                </p>
+                <p class="lead gsap-reveal">
+                  <span>LinkedIn: </span>
+                  <a
+                    href="https://www.linkedin.com/in/võ-thành-luân-540812278"
+                    class="text-decoration-none"
+                  >
+                    Xem qua</a
+                  >
+                </p>
+                <p class="lead gsap-reveal">
+                  <span>Zalo: </span>
+                  <a href="https://zalo.me/0987633254">Liên hệ nhanh</a>
+                </p>
+                <p class="gsap-reveal">
+                  <a
+                    href="file/CV-ver-3-full-stack@2x.pdf"
+                    class="btn btn-outline-pill btn-custom-light"
+                    download="tluan-cv"
+                    >Download my CV</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Liên hệ</h1>
-					<h2 class="mb-4">Liên hệ ngay</h2>
-				</div>
-			</div>
+        <div class="unslate_co--section" id="services-section">
+          <div class="container">
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">Dịch vụ</span>
+              </h2>
+              <span class="gsap-reveal"
+                ><img src="images/divider.png" alt="divider" width="76"
+              /></span>
+            </div>
 
-			<div class="row d-flex contact-info mb-5 justify-content-center">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-phone2"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Liên hệ nhanh</h3>
-							<p><a href="https://zalo.me/0987633254" target="_blank">Zalo</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-4 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-paper-plane"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Email</h3>
-							<p><a href="mailto:vothanhluan.tdc2223@gmai.com">vothanhluan.business@gmai.com</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box text-center p-4 shadow">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-globe"></span>
-						</div>
-						<div>
-							<h3 class="mb-4">Website</h3>
-							<p><a href="https://tluanbusiness.github.io/">tluanbusiness.github.io</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="row gutter-v3">
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
+                  <div class="wrap-icon mb-3">
+                    <img
+                      src="images/svg/001-options.svg"
+                      alt="Image"
+                      width="45"
+                    />
+                  </div>
+                  <h3>Thiết kế Landing Page</h3>
+                  <p>
+                    Sử dụng HTML, CSS, JS, PHP(Wordpress) để thiết kế các
+                    landing page
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
+                  <div class="wrap-icon mb-3">
+                    <img src="images/svg/002-chat.svg" alt="Icon" width="45" />
+                  </div>
+                  <h3>Lập trình Website</h3>
+                  <p>
+                    Nhận lập trình các web bán hàng, Admin CMS. Sử dụng Laravel,
+                    Wordpress Frame work hoặc PHP Thuần, MySQL - Database
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
+                  <div class="wrap-icon mb-3">
+                    <img
+                      src="images/svg/003-contact-book.svg"
+                      alt="Image"
+                      class="img-fluid"
+                      width="45"
+                    />
+                  </div>
+                  <h3>Lập trình APP(Ứng dụng Website)</h3>
+                  <p>Sử dụng C#, Java, Laravel - Backend</p>
+                </div>
+              </div>
 
-			<div class="row no-gutters block-9">
-				<div class="col-md-6 order-md-last d-flex">
-					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdsRtkymodO9NASJPDS4fr4dFROFMIQjTxkHi5LaPIfXeru3Q/viewform?embedded=true" width="640" height="821" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
+                  <div class="wrap-icon mb-3">
+                    <img
+                      src="images/svg/004-percentage.svg"
+                      alt="Image"
+                      width="45"
+                    />
+                  </div>
+                  <h3>Thiết Banner, Logo</h3>
+                  <p>
+                    Nhận thiết kế thiệp cưới, thiệp mời, banner, logo thương
+                    hiệu.. Photoshop, Figma, Canva
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
+                  <div class="wrap-icon mb-3">
+                    <img src="images/svg/006-goal.svg" alt="Image" width="45" />
+                  </div>
+                  <h3>Chỉnh sửa video</h3>
+                  <p>
+                    Chỉnh sửa các video ngắn. Sử dụng Adobe Premiere / Adobe
+                    After Effect
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
+                  <div class="wrap-icon mb-3">
+                    <img
+                      src="images/svg/005-line-chart.svg"
+                      alt="Image"
+                      width="45"
+                    />
+                  </div>
+                  <h3>Tư vấn</h3>
+                  <p>
+                    Hổ trợ tư vấn khách hàng về thiết kế website, nâng cấp
+                    website, bảo trì,...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				</div>
+        <div class="unslate_co--section section-counter" id="skills-section">
+          <div class="container">
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">Kỹ năng của tôi</span>
+              </h2>
+              <span class="gsap-reveal"
+                ><img src="images/divider.png" alt="divider" width="76" />
+                <h4><a href="">Kỹ năng chuyên môn</a></h4>
+                <img src="images/divider.png" alt="divider" width="76"
+              /></span>
+            </div>
 
-				<div class="col-md-6 d-flex">
-					<div class="img" style="background-image:url(images/logo.png); width: 550px; height: 550px;"></div>
-				</div>
-			</div>
-		</div>
-	</section>
+            <!-- Technical -->
+            <div class="row pt-5">
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="90"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">PHP</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="80"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Laravel Framework</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="85"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">HTML / CSS</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="80"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">OOP</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 mt-5"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="80"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Design Pattern</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 mt-5"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="60"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">C#</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 mt-5"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="60"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Java</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 mt-5"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="90"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label"
+                    >Database / MySQL / SQLServer</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Soft -->
+            <div class="section-heading-wrap text-center mb-5">
+              <span class="gsap-reveal"
+                ><img src="images/divider.png" alt="divider" width="76" />
+                <h4><a href="">Kỹ năng mềm</a></h4>
+                <img src="images/divider.png" alt="divider" width="76"
+              /></span>
+            </div>
+            <div class="row pt-5">
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="100"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Teamwork</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="100"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Lắng nghe</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="90"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Giải quyết vấn đề</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="90"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Giao tiếp</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 mt-5"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="100"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Tìm kiếm</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 mt-5"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="100"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Tiếng Anh(đọc - hiểu)</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 mt-5"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="100"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Trách nhiệm - Kiên nhẫn</span>
+                </div>
+              </div>
+              <div
+                class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3 mt-5"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="100"
+                      >0</span
+                    >
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Quản lý thời gian</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END .counter -->
 
+        <div class="unslate_co--section" id="testimonial-section">
+          <div class="container">
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">Đánh giá của khách hàng</span>
+              </h2>
+              <span class="gsap-reveal"
+                ><img src="images/divider.png" alt="divider" width="76"
+              /></span>
+            </div>
+          </div>
 
-	<footer class="ftco-footer ftco-section">
-		<div class="container">
-			<div class="row mb-5">
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2 text-uppercase">Giới thiệu</h2>
-						<p>Luôn Luôn phát triển, đổi mới bản thân không ngừng nghĩ để thích nghi với môi trường làm việc và công nghệ.</p>
-						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-							<li class="ftco-animate"><a href="https://github.com/tluanBusiness"><span
-										class="icon-github"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.linkedin.com/in/võ-thành-luân-540812278"><span
-										class="icon-linkedin"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100011526190366&mibextid=LQQJ4d"><span
-										class="icon-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.instagram.com/t.luan2706/"><span
-										class="icon-instagram"></span></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4 ml-md-4">
-						<h2 class="ftco-heading-2 text-uppercase">Liên kết</h2>
-						<ul class="list-unstyled">
-							<li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Trang chủ</a></li>
-							<li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>Thông tin</a></li>
-							<li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Dịch vụ</a></li>
-							<li><a href="#page-2"><span class="icon-long-arrow-right mr-2"></span>Dự án cá nhân</a></li>
-							<li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Liên hệ</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md">
-					<div class="ftco-footer-widget mb-4">
-						<h2 class="ftco-heading-2 text-uppercase">Dịch vụ</h2>
-						<ul class="list-unstyled">
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Thiết kế landing page</a>
-							</li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Thiết kế web bán hàng
-									Wordpress</a>
-							</li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Thiết kế giao diện APP,
-									WEB</a>
-							</li>
-							<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Thiết kế Logo, Banner</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 text-center">
+          <div class="owl-carousel testimonial-slider" data-aos="fade-up">
+            <div>
+              <div class="testimonial-v1">
+                <div class="testimonial-inner-bg">
+                  <span class="quote">&ldquo;</span>
+                  <blockquote>
+                    "Tôi rất hài lòng với dịch vụ xây dựng website chành xe của
+                    Thành Luân. Từ khâu tư vấn ban đầu đến quá trình triển khai
+                    và hoàn thiện, Luân luôn thể hiện sự chuyên nghiệp và tận
+                    tâm. Website được thiết kế đẹp mắt, dễ sử dụng và tích hợp
+                    đầy đủ các tính năng cần thiết cho hoạt động của một chành
+                    xe. Đặc biệt, tốc độ tải trang nhanh và giao diện thân thiện
+                    với người dùng đã giúp khách hàng của tôi dễ dàng truy cập
+                    và sử dụng dịch vụ. Tôi sẽ không ngần ngại giới thiệu Thành
+                    Luân cho bất kỳ ai đang có nhu cầu xây dựng website."
+                  </blockquote>
+                </div>
 
-					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						Copyright &copy;
-						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
-							href="https://colorlib.com" target="_blank">Colorlib</a>
-						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
+                <div class="testimonial-author-info">
+                  <img src="images/client/man.png" alt="Image" />
+                  <h3>Tiến Phúc</h3>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial-v1">
+                <div class="testimonial-inner-bg">
+                  <span class="quote">&ldquo;</span>
+                  <blockquote>
+                    Thái độ làm việc của Luân trong việc xây dựng website bất
+                    động sản của tôi thật sự rất ấn tượng. Trang web không chỉ
+                    có thiết kế hiện đại và dễ sử dụng mà còn phản ánh rõ ràng
+                    tầm nhìn và thương hiệu của tôi. Luân đã chứng minh khả năng
+                    vượt trội trong việc tạo ra các giải pháp sáng tạo và hiệu
+                    quả, đồng thời luôn đáp ứng nhanh chóng và chính xác các yêu
+                    cầu. Đây là một sự khác biệt rõ rệt so với nhiều dịch vụ
+                    khác.
+                  </blockquote>
+                </div>
 
+                <div class="testimonial-author-info">
+                  <img src="images/client/quoc.jpg" alt="Image" />
+                  <h3>Nguyễn Anh Quốc</h3>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="testimonial-v1">
+                <div class="testimonial-inner-bg">
+                  <span class="quote">&ldquo;</span>
+                  <blockquote>
+                    Thiết kế website bán hàng Lafresh làm tôi rất hài lòng. Bạn
+                    Luân rất chuyên nghiệp, tận tâm và hiểu rõ nhu cầu của tôi.
+                    Giao diện website đẹp mắt, hiện đại và dễ sử dụng. Các tính
+                    năng được tiện nghi dễ sử dụng, hoạt động mượt mà và hỗ trợ
+                    tốt cho công việc kinh doanh. Dịch vụ hậu mãi chu đáo và mức
+                    giá hợp lý. Xin cảm ơn bạn Thành Luân đã giúp Lafresh có một
+                    website hiệu quả và chuyên nghiệp.
+                  </blockquote>
+                </div>
 
+                <div class="testimonial-author-info">
+                  <img src="images/client/pbao.jpg" alt="Image" />
+                  <h3>Phạm Gia Bảo</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END testimonial -->
 
-	<!-- loader -->
-	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-				stroke="#F96D00" />
-		</svg></div>
+        <div class="unslate_co--section" id="journal-section">
+          <div class="container">
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">Kinh Nghiệm</span>
+              </h2>
+              <span class="gsap-reveal"
+                ><img src="images/divider.png" alt="divider" width="76"
+              /></span>
+            </div>
+            <div
+              class="portfolio-single-wrap unslate_co--section"
+              id="portfolio-single-section"
+            >
+              <div class="portfolio-single-inner">
+                <h2 class="heading-portfolio-single-h4">Mevivu Technology</h2>
 
+                <!-- <div class="row gutter-v4 align-items-stretch mb-5">
+                    <div class="col-sm-6 col-md-6 col-lg-8 blog-post-entry">
+                      <a
+                        href="images/post_1.jpg"
+                        class="grid-item blog-item w-100 h-100"
+                        data-fancybox="gal"
+                        data-caption="A nice caption will be place here"
+                      >
+                        <div class="overlay">
+                          <div class="portfolio-item-content">
+                            <h3>A nice caption will be place here</h3>
+                          </div>
+                        </div>
+                        <img
+                          src="images/post_1.jpg"
+                          class="lazyload"
+                          alt="Image"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry">
+                      <a
+                        href="images/post_2.jpg"
+                        class="grid-item blog-item w-100 h-100"
+                        data-fancybox="gal"
+                      >
+                        <div class="overlay"></div>
+                        <img
+                          src="images/post_2.jpg"
+                          class="lazyload"
+                          alt="Image"
+                        />
+                      </a>
+                    </div>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
+                    <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry">
+                      <a
+                        href="images/post_3.jpg"
+                        class="grid-item blog-item w-100 h-100"
+                        data-fancybox="gal"
+                      >
+                        <div class="overlay"></div>
+                        <img
+                          src="images/post_3.jpg"
+                          class="lazyload"
+                          alt="Image"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry">
+                      <a
+                        href="images/post_4.jpg"
+                        class="grid-item blog-item w-100 h-100"
+                        data-fancybox="gal"
+                      >
+                        <div class="overlay"></div>
+                        <img
+                          src="images/post_4.jpg"
+                          class="lazyload"
+                          alt="Image"
+                        />
+                      </a>
+                    </div>
 
-	<script src="js/main.js"></script>
+                    <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry">
+                      <a
+                        href="images/post_5.jpg"
+                        class="grid-item blog-item w-100 h-100"
+                        data-fancybox="gal"
+                      >
+                        <div class="overlay"></div>
+                        <img
+                          src="images/post_5.jpg"
+                          class="lazyload"
+                          alt="Image"
+                        />
+                      </a>
+                    </div>
+                  </div> -->
 
-</body>
+                <div class="row justify-content-between mb-5">
+                  <div class="col-12 mb-5">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="detail-v1">
+                          <span class="detail-label">Thời gian</span>
+                          <span class="detail-val">12/2023 - 6/2024</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="detail-v1">
+                          <span class="detail-label">Vai trò</span>
+                          <span class="detail-val"
+                            ><a href="#">Back-End Developer</a></span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="detail-v1">
+                          <span class="detail-label">Vị trí</span>
+                          <span class="detail-val">Leader Team Back-End</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="detail-v1">
+                          <span class="detail-label">Website</span>
+                          <span class="detail-val"
+                            ><a href="https://mevivu.com/" target="_blank"
+                              >mevivu.com</a
+                            ></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 pr-md-5">
+                    <p>
+                      Lập trình web. Sử dụng ngôn ngữ PHP và dùng Laravel
+                      Framework cho phía backend. HTML, CSS(Bootstrap 5), JS cho
+                      phía frontend. MySQL cho việc lưu trữ dữ liệu người dùng.
+                    </p>
+                  </div>
+                  <div class="col-md-6 pl-md-5">
+                    <p>
+                      Đóng góp cho 6 dự án công ty khi làm việc tại công ty
+                      Mevivu Phát triển các ứng dụng Quản trị viên/Người dùng
+                      bằng PHP trong khuôn khổ sử dụng Framework Laravel Triển
+                      khai, thiết kế API RESTful, làm việc với MySQL. Tiến hành
+                      phân tích yêu cầu để vẽ sơ đồ và thiết kế cơ sở dữ liệu
+                      cho các dự án. Hướng dẫn, giám sát và đánh giá hiệu quả
+                      hoạt động của các nhóm thực tập. Tạo các trang web tương
+                      tác và thân thiện với người dùng bằng HTML, CSS,
+                      JavaScript, sử dụng Bootstrap và Tabler.io
+                    </p>
+                  </div>
+                </div>
+                <!-- <div class="row justify-content-center mb-5">
+                  <div class="col-md-12">
+                    <div class="testimonial-v1">
+                      <div class="testimonial-inner-bg">
+                        <span class="quote">&ldquo;</span>
+                        <blockquote>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia, there live the
+                          blind texts. Separated they live in Bookmarksgrove
+                          right at the coast of the Semantics, a large language
+                          ocean. A small river named Duden flows by their place
+                          and supplies it with the necessary regelialia. It is a
+                          paradisematic country, in which roasted parts of
+                          sentences fly into your mouth.
+                        </blockquote>
+                      </div>
 
+                      <div class="testimonial-author-info">
+                        <img src="images/person_man_1.jpg" alt="Image" />
+                        <h3>Eric Ingram</h3>
+                        <span class="d-block position"
+                          >Product Designer @facebook</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+              <div class="portfolio-single-inner">
+                <h2 class="heading-portfolio-single-h4">Win Media</h2>
+
+                <!-- <div class="row gutter-v4 align-items-stretch mb-5">
+                    <div class="col-sm-6 col-md-6 col-lg-8 blog-post-entry">
+                      <a
+                        href="images/post_1.jpg"
+                        class="grid-item blog-item w-100 h-100"
+                        data-fancybox="gal"
+                        data-caption="A nice caption will be place here"
+                      >
+                        <div class="overlay">
+                          <div class="portfolio-item-content">
+                            <h3>A nice caption will be place here</h3>
+                          </div>
+                        </div>
+                        <img
+                          src="images/post_1.jpg"
+                          class="lazyload"
+                          alt="Image"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry">
+                      <a
+                        href="images/post_2.jpg"
+                        class="grid-item blog-item w-100 h-100"
+                        data-fancybox="gal"
+                      >
+                        <div class="overlay"></div>
+                        <img
+                          src="images/post_2.jpg"
+                          class="lazyload"
+                          alt="Image"
+                        />
+                      </a>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry">
+                      <a
+                        href="images/post_3.jpg"
+                        class="grid-item blog-item w-100 h-100"
+                        data-fancybox="gal"
+                      >
+                        <div class="overlay"></div>
+                        <img
+                          src="images/post_3.jpg"
+                          class="lazyload"
+                          alt="Image"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry">
+                      <a
+                        href="images/post_4.jpg"
+                        class="grid-item blog-item w-100 h-100"
+                        data-fancybox="gal"
+                      >
+                        <div class="overlay"></div>
+                        <img
+                          src="images/post_4.jpg"
+                          class="lazyload"
+                          alt="Image"
+                        />
+                      </a>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-4 blog-post-entry">
+                      <a
+                        href="images/post_5.jpg"
+                        class="grid-item blog-item w-100 h-100"
+                        data-fancybox="gal"
+                      >
+                        <div class="overlay"></div>
+                        <img
+                          src="images/post_5.jpg"
+                          class="lazyload"
+                          alt="Image"
+                        />
+                      </a>
+                    </div>
+                  </div> -->
+
+                <div class="row justify-content-between mb-5">
+                  <div class="col-12 mb-5">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="detail-v1">
+                          <span class="detail-label">Thời gian</span>
+                          <span class="detail-val">7/2024 - Present</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="detail-v1">
+                          <span class="detail-label">Vai trò</span>
+                          <span class="detail-val"
+                            ><a href="#">Full-Stack Developer</a></span
+                          >
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="detail-v1">
+                          <span class="detail-label">Vị trí</span>
+                          <span class="detail-val">Technical Team Leader</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="detail-v1">
+                          <span class="detail-label">Website</span>
+                          <span class="detail-val"
+                            ><a href="https://winmedia.vn/" target="_blank"
+                              >winmedia.vn</a
+                            ></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 pr-md-5">
+                    <p>
+                      Tôi đảm nhận vai trò Full-stack Developer đồng thời là
+                      Technical Team Leader, sở hữu kỹ năng chuyên sâu trong
+                      phát triển web và quản lý hệ thống. Về backend, tôi sử
+                      dụng PHP, tận dụng Laravel Framework để xây dựng ứng dụng
+                      hiệu suất cao, phát triển WordPress tùy chỉnh và viết PHP
+                      thuần cho các giải pháp linh hoạt. Phía frontend, tôi
+                      thành thạo HTML, CSS (Bootstrap 5) và JavaScript để tạo
+                      giao diện hiện đại, tối ưu trải nghiệm người dùng. Dữ liệu
+                      được quản lý hiệu quả với MySQL, đảm bảo lưu trữ và truy
+                      xuất nhanh chóng.
+                      <br />
+                      Kinh nghiệm quản lý server, từ cấu hình đến xử lý sự cố,
+                      cùng với quản lý tên miền và triển khai hệ thống. Với vai
+                      trò lãnh đạo, tôi định hướng đội ngũ kỹ thuật, đảm bảo
+                      chất lượng và tiến độ cho các dự án công nghệ phức tạp.
+                    </p>
+                  </div>
+                  <div class="col-md-6 pl-md-5">
+                    <p>
+                      Đóng góp vào quản lý và xử lý sự cố server của công ty,
+                      đảm bảo hệ thống vận hành ổn định, đồng thời tham gia phát
+                      triển hơn 60 dự án website. Các dự án bao gồm nền tảng
+                      thương mại điện tử, hệ thống quản lý nội dung và ứng dụng
+                      web tùy chỉnh, được tối ưu hóa về hiệu suất, trải nghiệm
+                      người dùng và SEO trên Google, tạo ra các trang web mạnh
+                      mẽ và an toàn. Hỗ trợ doanh nghiệp nâng cao sự hiện diện
+                      trực tuyến, thu hút người dùng, tối ưu quy trình và đạt
+                      mục tiêu kỹ thuật số. Thiết kế banner, logo, video cho
+                      khách hàng, phát triển dự án mã nguồn riêng của công ty
+                      phục vụ cộng đồng, đồng thời tích hợp và nâng cấp công
+                      nghệ mới vào sản phẩm, mang lại giá trị vượt trội cho
+                      khách hàng.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <div class="row justify-content-center mb-5">
+                  <div class="col-md-12">
+                    <div class="testimonial-v1">
+                      <div class="testimonial-inner-bg">
+                        <span class="quote">&ldquo;</span>
+                        <blockquote>
+                          Far far away, behind the word mountains, far from the
+                          countries Vokalia and Consonantia, there live the
+                          blind texts. Separated they live in Bookmarksgrove
+                          right at the coast of the Semantics, a large language
+                          ocean. A small river named Duden flows by their place
+                          and supplies it with the necessary regelialia. It is a
+                          paradisematic country, in which roasted parts of
+                          sentences fly into your mouth.
+                        </blockquote>
+                      </div>
+
+                      <div class="testimonial-author-info">
+                        <img src="images/person_man_1.jpg" alt="Image" />
+                        <h3>Eric Ingram</h3>
+                        <span class="d-block position"
+                          >Product Designer @facebook</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END blog posts -->
+
+        <div class="unslate_co--section" id="contact-section">
+          <div class="container">
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">Liên hệ ngay</span>
+              </h2>
+              <span class="gsap-reveal"
+                ><img src="images/divider.png" alt="divider" width="76"
+              /></span>
+            </div>
+
+            <div class="row justify-content-between">
+              <div class="col-md-6">
+                <form
+                  method="post"
+                  class="form-outline-style-v1"
+                  id="contactForm"
+                >
+                  <div class="form-group row mb-0">
+                    <div class="col-lg-6 form-group gsap-reveal">
+                      <label for="name">Name</label>
+                      <input
+                        name="name"
+                        type="text"
+                        class="form-control"
+                        id="name"
+                      />
+                    </div>
+                    <div class="col-lg-6 form-group gsap-reveal">
+                      <label for="email">Email</label>
+                      <input
+                        name="email"
+                        type="email"
+                        class="form-control"
+                        id="email"
+                      />
+                    </div>
+                    <div class="col-lg-12 form-group gsap-reveal">
+                      <label for="message">Write your message...</label>
+                      <textarea
+                        name="message"
+                        id="message"
+                        cols="30"
+                        rows="7"
+                        class="form-control"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row gsap-reveal">
+                    <div class="col-md-12 d-flex align-items-center">
+                      <input
+                        type="submit"
+                        class="btn btn-outline-pill btn-custom-light mr-3"
+                        value="Send Message"
+                      />
+                      <span class="submitting"></span>
+                    </div>
+                  </div>
+                </form>
+                <div id="form-message-warning" class="mt-4"></div>
+                <div id="form-message-success">
+                  Your message was sent, thank you!
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="contact-info-v1">
+                  <div class="gsap-reveal d-block">
+                    <span class="d-block contact-info-label">Email</span>
+                    <a
+                      href="mailto:vothanhluan.business@gmail.com"
+                      class="contact-info-val"
+                      >vothanhluan.business@gmail.com</a
+                    >
+                  </div>
+                  <div class="gsap-reveal d-block">
+                    <span class="d-block contact-info-label">Phone</span>
+                    <a href="#" class="contact-info-val">(+84) 0987 633 254</a>
+                  </div>
+                  <div class="gsap-reveal d-block">
+                    <span class="d-block contact-info-label">Address</span>
+                    <address class="contact-info-val">TP. HCM</address>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END .unslate_co-site-inner -->
+
+      <footer class="unslate_co--footer unslate_co--section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              <div class="footer-site-logo">
+                <a href="#">Thành Luân<span>.</span></a>
+              </div>
+
+              <ul class="footer-site-social">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100011526190366&mibextid=LQQJ4d"
+                    >Facebook</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/võ-thành-luân-540812278"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li><a href="https://zalo.me/0987633254">Zalo</a></li>
+                <li>
+                  <a href="https://www.instagram.com/t.luan2706/">Instagram</a>
+                </li>
+              </ul>
+
+              <!-- <p class="site-copyright">
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="icon-heart" aria-hidden="true"></i> by
+                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Loader -->
+    <div id="unslate_co--overlayer"></div>
+    <div class="site-loader-wrap">
+      <div class="site-loader"></div>
+    </div>
+
+    <script src="js/scripts-dist.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
